@@ -52,7 +52,7 @@ function {
 
 <% if local? :env_vars %>
 <% local!(:env_vars).each do |name, value| %>
-export <%= name %>=<%= value %>
+export <%= name %>="<%= value %>"
 <% end -%>
 <% end -%>
 
